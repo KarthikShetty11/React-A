@@ -14,47 +14,27 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
+import Lists from "./Lists";
+import Date from "./Date";
 
-// const name = "Karthik";
-// const currentDate = new Date();
-// const year = currentDate.getFullYear();
-// const customStyle = {
-//   color: "grey",
-//   fontSize: "1rem"
-// };
-
-const date = new Date(2019, 1, 1, 20);
-const time = date.getHours();
+const name = "Karthik";
+const currentDate = new Date();
+const year = currentDate.getFullYear;
 const customStyle = {
-  color: ""
+  color: "grey",
+  fontSize: "1rem"
 };
-
-let message;
-if (time < 12) {
-  message = "good morning";
-  customStyle.color = "red";
-} else if (time < 18) {
-  message = "good Afternoon";
-  customStyle.color = "blue";
-} else if (time < 21) {
-  message = "good evening";
-  customStyle.color = "green";
-} else {
-  message = "good night";
-  customStyle.color = "yellow";
-}
 
 ReactDOM.render(
   <div>
-    {/* <h1 className="heading" contentEditable="false" spellCheck="false">
+    <h1 className="heading" contentEditable="false" spellCheck="false">
       Hi, {name}
     </h1>
     <p style={{ color: "red" }}>Created by {name}</p>
-    <p style={customStyle}>Copyright {year} </p> */}
+    <p style={customStyle}>Copyright {year} </p>
 
-    <h2 className="heading2" style={customStyle}>
-      Hi..{message}
-    </h2>
+    <Date />
+    <Lists />
 
     <div>
       <img
@@ -71,22 +51,3 @@ ReactDOM.render(
   </div>,
   document.getElementById("root")
 );
-
-// const fName = "Karthik";
-// const lName = "Shetty";
-// const num = 7;
-
-// ReactDOM.render(
-//   <div>
-//     <h1>
-//       Hi, {fName} {lName}
-//     </h1>
-//     <ul>
-//       <li> part 1</li>
-//       <li> part 2</li>
-//       <li> part 3</li>
-//     </ul>
-//     <p>your lucky number is {num}</p>
-//   </div>,
-//   document.getElementById("root")
-// );
