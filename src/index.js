@@ -23,19 +23,25 @@ import ReactDOM from "react-dom";
 //   fontSize: "1rem"
 // };
 
-const date = new Date(2019, 1, 1, 1);
-console.log(date);
+const date = new Date(2019, 1, 1, 20);
 const time = date.getHours();
-console.log(time);
+const customStyle = {
+  color: ""
+};
+
 let message;
 if (time < 12) {
   message = "good morning";
+  customStyle.color = "red";
 } else if (time < 18) {
   message = "good Afternoon";
+  customStyle.color = "blue";
 } else if (time < 21) {
   message = "good evening";
+  customStyle.color = "green";
 } else {
   message = "good night";
+  customStyle.color = "yellow";
 }
 
 ReactDOM.render(
@@ -46,7 +52,9 @@ ReactDOM.render(
     <p style={{ color: "red" }}>Created by {name}</p>
     <p style={customStyle}>Copyright {year} </p> */}
 
-    <h2 className="heading2">Hi..{message}</h2>
+    <h2 className="heading2" style={customStyle}>
+      Hi..{message}
+    </h2>
 
     <div>
       <img
