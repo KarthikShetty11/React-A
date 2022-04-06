@@ -15,21 +15,39 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const name = "Karthik";
-const currentDate = new Date();
-const year = currentDate.getFullYear();
-const customStyle = {
-  color: "grey",
-  fontSize: "1rem"
-};
+// const name = "Karthik";
+// const currentDate = new Date();
+// const year = currentDate.getFullYear();
+// const customStyle = {
+//   color: "grey",
+//   fontSize: "1rem"
+// };
+
+const date = new Date(2019, 1, 1, 1);
+console.log(date);
+const time = date.getHours();
+console.log(time);
+let message;
+if (time < 12) {
+  message = "good morning";
+} else if (time < 18) {
+  message = "good Afternoon";
+} else if (time < 21) {
+  message = "good evening";
+} else {
+  message = "good night";
+}
 
 ReactDOM.render(
   <div>
-    <h1 className="heading" contentEditable="false" spellCheck="false">
+    {/* <h1 className="heading" contentEditable="false" spellCheck="false">
       Hi, {name}
     </h1>
     <p style={{ color: "red" }}>Created by {name}</p>
-    <p style={customStyle}>Copyright {year} </p>
+    <p style={customStyle}>Copyright {year} </p> */}
+
+    <h2 className="heading2">Hi..{message}</h2>
+
     <div>
       <img
         className="img"
