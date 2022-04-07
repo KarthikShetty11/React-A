@@ -2,6 +2,7 @@ import React from "react";
 
 const date = new Date();
 const time = date.getHours;
+console.log(time);
 const customStyle = {
   color: ""
 };
