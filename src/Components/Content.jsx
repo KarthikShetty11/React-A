@@ -1,14 +1,14 @@
 import React from "react";
 
-const name = "Karthik";
-const currentDate = new Date();
-const year = currentDate.getFullYear;
-const customStyle = {
-  color: "grey",
-  fontSize: "1rem"
-};
-
 function Content() {
+  const name = "Karthik";
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
+  const customStyle = {
+    color: "grey",
+    fontSize: "1rem"
+  };
+
   return (
     <div>
       <h1 className="heading" contentEditable="false" spellCheck="false">

@@ -11,13 +11,13 @@
 
 import React from "react";
 import Lists from "./Lists";
-import Date from "./Date";
+import Datee from "./Datee";
 import Content from "./Content";
 
 function App() {
   return (
     <div>
-      <Date />
+      <Datee />
       <Lists />
       <Content />
     </div>
