@@ -13,16 +13,16 @@ import React from "react";
 import Lists from "./Lists";
 import Datee from "./Datee";
 import Content from "./Content";
-import { Add, Subtract, Multiply, Divide } from "./Calc";
+import { add, subtract, multiply, divide } from "./Calc";
 
 function App() {
   return (
     <div>
       <ul>
-        <li>{Add(5, 6)}</li>
-        <li>{Subtract(9, 5)}</li>
-        <li>{Multiply(2, 4)}</li>
-        <li>{Divide(6, 3)}</li>
+        <li>{add(5, 6)}</li>
+        <li>{subtract(9, 5)}</li>
+        <li>{multiply(2, 4)}</li>
+        <li>{divide(6, 3)}</li>
       </ul>
 
       <Datee />

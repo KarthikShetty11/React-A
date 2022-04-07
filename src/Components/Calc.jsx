@@ -1,19 +1,19 @@
 import React from "react";
 
-function Add(n1, n2) {
+function add(n1, n2) {
   return n1 + n2;
 }
 
-function Subtract(n1, n2) {
+function subtract(n1, n2) {
   return n1 - n2;
 }
 
-function Multiply(n1, n2) {
+function multiply(n1, n2) {
   return n1 * n2;
 }
 
-function Divide(n1, n2) {
+function divide(n1, n2) {
   return n1 / n2;
 }
 
-export { Add, Subtract, Multiply, Divide };
+export { add, subtract, multiply, divide };
