@@ -1,7 +1,7 @@
 import React from "react";
 
 function Content() {
-  const name = "Karthik";
+  const name = "buddy";
   const currentDate = new Date();
   const year = currentDate.getFullYear();
   const customStyle = {

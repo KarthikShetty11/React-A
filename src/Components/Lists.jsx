@@ -1,7 +1,7 @@
 import React from "react";
 
-const fName = "Karthik";
-const lName = "Shetty";
+const fName = "hello";
+const lName = "hii";
 const num = 7;
 
 function Lists() {
