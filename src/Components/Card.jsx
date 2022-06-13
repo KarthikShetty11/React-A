@@ -2,7 +2,7 @@ import React from "react";
 
 function Card(props) {
   return (
-    <div>
+    <div className="cars">
       <h3>{props.name}</h3>
       <img src={props.img} alt="wallpaper" />
       <p>{props.year}</p>

@@ -34,6 +34,16 @@ function App() {
         year="2018"
       />
 
+      <Card
+        name="bugatti"
+        img="https://www.supercars.net/blog/wp-content/uploads/2020/07/2017-Bugatti-Chiron-019-1600.jpg"
+        year="2019"
+      />
+      <Card
+        name="ferrari"
+        img="https://www.supercars.net/blog/wp-content/uploads/2020/07/wallpaperflare.com_wallpaper-10-3.jpg"
+        year="2018"
+      />
       <Lists />
       <Content />
     </div>
