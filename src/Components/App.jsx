@@ -19,10 +19,10 @@ function App() {
   return (
     <div>
       <ul>
-        <li>{add(5, 6)}</li>
-        <li>{subtract(9, 5)}</li>
-        <li>{multiply(2, 4)}</li>
-        <li>{divide(6, 3)}</li>
+        <li>Addition : {add(5, 6)}</li>
+        <li>Subtration : {subtract(9, 5)}</li>
+        <li>Multiplication : {multiply(2, 4)}</li>
+        <li>Division : {divide(6, 3)}</li>
       </ul>
 
       <Datee />
