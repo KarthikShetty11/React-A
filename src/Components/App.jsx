@@ -14,6 +14,7 @@ import Lists from "./Lists";
 import Datee from "./Datee";
 import Content from "./Content";
 import { add, subtract, multiply, divide } from "./Calc";
+import Card from "./Card";
 
 function App() {
   return (
@@ -26,6 +27,13 @@ function App() {
       </ul>
 
       <Datee />
+
+      <Card
+        name="ferrari"
+        img="https://www.supercars.net/blog/wp-content/uploads/2020/07/wallpaperflare.com_wallpaper-10-3.jpg"
+        year="2018"
+      />
+
       <Lists />
       <Content />
     </div>
