@@ -15,6 +15,7 @@ import Datee from "./Datee";
 import Content from "./Content";
 import { add, subtract, multiply, divide } from "./Calc";
 import Card from "./Card";
+import "../../public/styles.css";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
       </ul>
 
       <Datee />
+      <Lists />
+      <Content />
 
       <Card
         name="ferrari"
@@ -44,8 +47,6 @@ function App() {
         img="https://www.supercars.net/blog/wp-content/uploads/2020/07/wallpaperflare.com_wallpaper-10-3.jpg"
         year="2018"
       />
-      <Lists />
-      <Content />
     </div>
   );
 }

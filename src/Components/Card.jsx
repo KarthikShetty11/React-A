@@ -2,9 +2,9 @@ import React from "react";
 
 function Card(props) {
   return (
-    <div className="cars">
+    <div>
       <h3>{props.name}</h3>
-      <img src={props.img} alt="wallpaper" />
+      <img className="cars" src={props.img} alt="wallpaper" />
       <p>{props.year}</p>
     </div>
   );
